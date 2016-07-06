@@ -11,5 +11,10 @@
             "email": "xedin.unknown@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Psr\\EventManager\\": "src/"
+        }
+    }
 }
