@@ -1,0 +1,15 @@
+{
+    "name": "dhii/psr-14",
+    "description": "A temporary PSR-14 repository.",
+    "authors": [
+        {
+            "name": "Miguel Muscat",
+            "email": "miguelmuscat93@gmail.com"
+        },
+        {
+            "name": "Anton Ukhanev",
+            "email": "xedin.unknown@gmail.com"
+        }
+    ],
+    "require": {}
+}
