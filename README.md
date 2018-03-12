@@ -8,8 +8,8 @@
 [![This package complies with Dhii standards](https://img.shields.io/badge/Dhii-Compliant-green.svg?style=flat-square)][Dhii]
 
 ## Details
-This package holds the interfaces for the [PSR-14 standard][php-fig/event-manager]. When the standard actually enters
-a draft state, and the FIG publishes it separately, this package will become deprecated. However, we will maintain
+This package holds the interfaces for the [PSR-14][php-fig/event-manager] standard. When the standard actually enters
+a draft state, and the FIG publishes it separately, this package may become deprecated. However, we will maintain
 compatibility where possible, and will release versions with proper stability.
 
 ### Interfaces
