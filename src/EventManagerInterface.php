@@ -5,14 +5,14 @@ namespace Psr\EventManager;
 /**
  * Interface for EventManager.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface EventManagerInterface
 {
     /**
      * Attach a listener to an event.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string   $event    The name of the event to attach the listener to.
      * @param callable $callback The event listener.
@@ -25,7 +25,7 @@ interface EventManagerInterface
     /**
      * Detach a listener from an event.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string   $event    The event to detach the listener from.
      * @param callable $callback The listener to detach.
@@ -37,7 +37,7 @@ interface EventManagerInterface
     /**
      * Clear all listeners for a given event.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string $event The name of the event to detach the listeners from.
      */
@@ -46,7 +46,7 @@ interface EventManagerInterface
     /**
      * Trigger an event.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string|EventInterface $event  The event or the name of an event to trigger.
      * @param object|string         $target The context, for which the event is being triggered, if any.
