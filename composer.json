@@ -1,20 +1,43 @@
 {
     "name": "dhii/psr-14",
-    "description": "A temporary PSR-14 repository.",
+    "description": "Interfaces for the PSR-14 standard.",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Miguel Muscat",
-            "email": "miguelmuscat93@gmail.com"
-        },
-        {
-            "name": "Anton Ukhanev",
-            "email": "xedin.unknown@gmail.com"
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
         }
     ],
-    "require": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^5.3 | ^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "ptrofimov/xpmock": "^1.1",
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "codeclimate/php-test-reporter": "<=0.3.2"
+    },
     "autoload": {
         "psr-4": {
-            "Psr\\EventManager\\": "src/"
+            "Psr\\EventManager\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Psr\\EventManager\\UnitTest\\": "test/unit",
+            "Psr\\EventManager\\FuncTest\\": "test/functional"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "csfix": "php-cs-fixer fix -vvv"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.1.x-dev"
         }
     }
 }
