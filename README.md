@@ -29,4 +29,4 @@ in the original spec. If the spec breaks BC, the minor version number will incre
 [EventManagerInterface]:                            src/EventManagerInterface.php
 [EventInterface]:                                   src/EventInterface.php
 
-[0.1.x]:                                            /tree/develop
+[0.1.x]:                                            https://github.com/Dhii/psr-14/tree/develop
