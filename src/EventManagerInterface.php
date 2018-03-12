@@ -10,27 +10,27 @@ namespace Psr\EventManager;
 interface EventManagerInterface
 {
     /**
-     * Attaches a listener to an event.
+     * Attach a listener to an event.
      *
      * @since [*next-version*]
      *
-     * @param string   $event    the event to attach too
-     * @param callable $callback a callable function
-     * @param int      $priority the priority at which the $callback executed
+     * @param string   $event    The name of the event to attach the listener to.
+     * @param callable $callback The event listener.
+     * @param int      $priority The priority of the listener.
      *
-     * @return bool true on success false on failure
+     * @return bool True on success; false on failure.
      */
     public function attach($event, $callback, $priority = 0);
 
     /**
-     * Detaches a listener from an event.
+     * Detach a listener from an event.
      *
      * @since [*next-version*]
      *
-     * @param string   $event    the event to attach too
-     * @param callable $callback a callable function
+     * @param string   $event    The event to detach the listener from.
+     * @param callable $callback The listener to detach.
      *
-     * @return bool true on success false on failure
+     * @return bool True on success; false on failure.
      */
     public function detach($event, $callback);
 
@@ -39,22 +39,20 @@ interface EventManagerInterface
      *
      * @since [*next-version*]
      *
-     * @param string $event
+     * @param string $event The name of the event to detach the listeners from.
      */
     public function clearListeners($event);
 
     /**
      * Trigger an event.
      *
-     * Can accept an EventInterface or will create one if not passed.
-     *
      * @since [*next-version*]
      *
-     * @param string|EventInterface $event
-     * @param object|string         $target
-     * @param array|object          $argv
+     * @param string|EventInterface $event The event or the name of an event to trigger.
+     * @param object|string         $target The context, for which the event is being triggered, if any.
+     * @param array|object          $argv  The map of event parameters.
      *
-     * @return mixed
+     * @return mixed The result of the last event listener.
      */
     public function trigger($event, $target = null, $argv = array());
 }

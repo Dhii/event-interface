@@ -14,7 +14,8 @@ interface EventInterface
      *
      * @since [*next-version*]
      *
-     * @return string
+     * @return string The name of the event.
+     * The event name contains mixed-case alphanumeric characters, as well as '_' (underscore) and '.' (period).
      */
     public function getName();
 
@@ -23,7 +24,7 @@ interface EventInterface
      *
      * @since [*next-version*]
      *
-     * @return null|string|object
+     * @return null|string|object The event context, if any.
      */
     public function getTarget();
 
@@ -32,7 +33,7 @@ interface EventInterface
      *
      * @since [*next-version*]
      *
-     * @return array
+     * @return array The map of event parameter names to values.
      */
     public function getParams();
 
@@ -41,9 +42,9 @@ interface EventInterface
      *
      * @since [*next-version*]
      *
-     * @param string $name
+     * @param string $name The name of the parameter to get.
      *
-     * @return mixed
+     * @return mixed The value of the parameter.
      */
     public function getParam($name);
 
@@ -52,7 +53,7 @@ interface EventInterface
      *
      * @since [*next-version*]
      *
-     * @param string $name
+     * @param string $name The name of the event.
      */
     public function setName($name);
 
@@ -61,7 +62,7 @@ interface EventInterface
      *
      * @since [*next-version*]
      *
-     * @param null|string|object $target
+     * @param null|string|object $target The context of the event.
      */
     public function setTarget($target);
 
@@ -70,7 +71,7 @@ interface EventInterface
      *
      * @since [*next-version*]
      *
-     * @param array $params
+     * @param array $params The map of parameter names to values.
      */
     public function setParams(array $params);
 
@@ -79,7 +80,7 @@ interface EventInterface
      *
      * @since [*next-version*]
      *
-     * @param bool $flag
+     * @param bool $flag If true, no further listeners for this event will be triggered.
      */
     public function stopPropagation($flag);
 
@@ -88,7 +89,7 @@ interface EventInterface
      *
      * @since [*next-version*]
      *
-     * @return bool
+     * @return bool True if propagation has been stopped; false otherwise.
      */
     public function isPropagationStopped();
 }
