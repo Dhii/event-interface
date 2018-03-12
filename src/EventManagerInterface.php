@@ -3,48 +3,58 @@
 namespace Psr\EventManager;
 
 /**
- * Interface for EventManager
+ * Interface for EventManager.
+ *
+ * @since [*next-version*]
  */
 interface EventManagerInterface
 {
-
     /**
-     * Attaches a listener to an event
+     * Attaches a listener to an event.
      *
-     * @param string $event the event to attach too
+     * @since [*next-version*]
+     *
+     * @param string   $event    the event to attach too
      * @param callable $callback a callable function
-     * @param int $priority the priority at which the $callback executed
+     * @param int      $priority the priority at which the $callback executed
+     *
      * @return bool true on success false on failure
      */
     public function attach($event, $callback, $priority = 0);
 
     /**
-     * Detaches a listener from an event
+     * Detaches a listener from an event.
      *
-     * @param string $event the event to attach too
+     * @since [*next-version*]
+     *
+     * @param string   $event    the event to attach too
      * @param callable $callback a callable function
+     *
      * @return bool true on success false on failure
      */
     public function detach($event, $callback);
 
     /**
-     * Clear all listeners for a given event
+     * Clear all listeners for a given event.
      *
-     * @param  string $event
-     * @return void
+     * @since [*next-version*]
+     *
+     * @param string $event
      */
     public function clearListeners($event);
 
     /**
-     * Trigger an event
+     * Trigger an event.
      *
-     * Can accept an EventInterface or will create one if not passed
+     * Can accept an EventInterface or will create one if not passed.
      *
-     * @param  string|EventInterface $event
-     * @param  object|string $target
-     * @param  array|object $argv
+     * @since [*next-version*]
+     *
+     * @param string|EventInterface $event
+     * @param object|string         $target
+     * @param array|object          $argv
+     *
      * @return mixed
      */
     public function trigger($event, $target = null, $argv = array());
-
 }
