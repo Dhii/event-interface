@@ -48,9 +48,9 @@ interface EventManagerInterface
      *
      * @since [*next-version*]
      *
-     * @param string|EventInterface $event The event or the name of an event to trigger.
+     * @param string|EventInterface $event  The event or the name of an event to trigger.
      * @param object|string         $target The context, for which the event is being triggered, if any.
-     * @param array|object          $argv  The map of event parameters.
+     * @param array|object          $argv   The map of event parameters.
      *
      * @return mixed The result of the last event listener.
      */

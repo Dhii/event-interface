@@ -15,7 +15,7 @@ interface EventInterface
      * @since [*next-version*]
      *
      * @return string The name of the event.
-     * The event name contains mixed-case alphanumeric characters, as well as '_' (underscore) and '.' (period).
+     *                The event name contains mixed-case alphanumeric characters, as well as '_' (underscore) and '.' (period).
      */
     public function getName();
 
