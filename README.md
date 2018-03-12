@@ -12,6 +12,11 @@ This package holds the interfaces for the [PSR-14][php-fig/event-manager] standa
 a draft state, and the FIG publishes it separately, this package may become deprecated. However, we will maintain
 compatibility where possible, and will release versions with proper stability.
 
+### Version Guide
+- [`0.1.x`][0.1.x] - This focuses on the [orignal specification][php-fig/event-manager]. If the spec changes, a new
+patch version will be released. There may be alpha, beta, and other unstable pre-prod versions to mirror advancements
+in the original spec. If the spec breaks BC, the minor version number will increase.
+
 ### Interfaces
 - [`EventManagerInterface`][EventManagerInterface] - Takes care of dispatching events and maintaining handler association.
 - [`EventInterface`][EventInterface] - Represents an event.
@@ -23,3 +28,5 @@ compatibility where possible, and will release versions with proper stability.
 
 [EventManagerInterface]:                            src/EventManagerInterface.php
 [EventInterface]:                                   src/EventInterface.php
+
+[0.1.x]:                                            tree/develop
