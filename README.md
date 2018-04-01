@@ -9,15 +9,17 @@
 
 ## Details
 This package holds interfaces that are inspired by the [PSR-14][php-fig/event-manager] standard, expanding on it,
-and even improving it. The current version is compatible with the PSR-14 spec; however, this is planned to be
-changed. The changes will reflect the authors' ideas on how the standard could be made better, and are quite
-opinionated. However, the improved standard aims to supersede the original spec, and is hoped to inspire
-changes to PSR-14. The FIG and the PHP community in general is encouraged to open discussions and make
-suggestions. 
+and even improving it. This spec is partially compatible with the original PSR-14 spec: `EventInterface` is entirely
+compatible (extends PSR interface), and `EventManagerInterface` is forward-compatible (does not extend PSR interface,
+but classes extending PSR interface can extend Dhii interface without modifications). The improved standard aims to 
+supersede the original spec, and is hoped to inspire changes to PSR-14, making the standard simpler and stricter.
+The FIG and the PHP community in general is encouraged to open discussions and make suggestions. 
 
 ### Interfaces
 - [`EventManagerInterface`][EventManagerInterface] - Takes care of dispatching events and maintaining handler association.
 - [`EventInterface`][EventInterface] - Represents an event.
+- [`EventFactoryInterface`][EventFactoryInterface] - Creates `EventInterface` instances.
+- [`EventManagerFactoryInterface`][EventManagerFactoryInterface] - Creates `EventManagerInterface` instances.
 
 
 [Dhii]:                                             https://github.com/Dhii/dhii
@@ -26,5 +28,5 @@ suggestions.
 
 [EventManagerInterface]:                            src/EventManagerInterface.php
 [EventInterface]:                                   src/EventInterface.php
-
-[0.1.x]:                                            https://github.com/Dhii/event-manager-interface/tree/develop
+[EventFactoryInterface]:                            src/EventFactoryInterface.php
+[EventManagerFactoryInterface]:                     src/EventManagerFactoryInterface.php
