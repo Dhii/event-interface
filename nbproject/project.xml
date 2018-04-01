@@ -3,7 +3,7 @@
     <type>org.netbeans.modules.php.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/php-project/1">
-            <name>dhii - psr-14</name>
+            <name>dhii - event-manager-interface</name>
         </data>
     </configuration>
 </project>
