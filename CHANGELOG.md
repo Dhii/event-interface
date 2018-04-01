@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Project now a Dhii project.
 - Namespaces converted to proprietary.
-- Tests added.
+- Broke BC for `EventManagerInterface`: no longer extends PSR interface, but is forward-compatible.
 
 ## [0.1.1-alpha1] - 2018-03-13
 ### Added
