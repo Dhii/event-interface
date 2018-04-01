@@ -1,8 +1,8 @@
 <?php
 
-namespace Psr\EventManager\FuncTest;
+namespace Dhii\EventManager\UnitTest;
 
-use Psr\EventManager\EventManagerInterface as TestSubject;
+use Dhii\EventManager\EventInterface as TestSubject;
 use Xpmock\TestCase;
 use Exception as RootException;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
@@ -13,14 +13,14 @@ use PHPUnit_Framework_MockObject_MockBuilder as MockBuilder;
  *
  * @since [*next-version*]
  */
-class EventManagerInterfaceTest extends TestCase
+class EventInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Psr\EventManager\EventManagerInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\EventManager\EventInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -34,10 +34,16 @@ class EventManagerInterfaceTest extends TestCase
     public function createInstance($methods = array())
     {
         is_array($methods) && $methods = $this->mergeValues($methods, array(
-            'attach',
-            'detach',
-            'clearListeners',
-            'trigger',
+            'getName',
+            'getTarget',
+            'getParams',
+            'getParam',
+            'setName',
+            'setTarget',
+            'setParams',
+            'setParam',
+            'stopPropagation',
+            'isPropagationStopped',
         ));
 
         $mock = $this->getMockBuilder(static::TEST_SUBJECT_CLASSNAME)
