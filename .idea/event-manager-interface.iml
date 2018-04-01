@@ -5,17 +5,26 @@
       <sourceFolder url="file://$MODULE_DIR$/test/unit" isTestSource="true" packagePrefix="Dhii\EventManager\UnitTest\" />
       <sourceFolder url="file://$MODULE_DIR$/test/functional" isTestSource="true" packagePrefix="Dhii\EventManager\FuncTest\" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Dhii\EventManager\" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/exception-interface" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/factory-interface" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/psr-14" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/stringable-interface" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="PHP" type="php">
         <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/dhii/exception-interface" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/factory-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/psr-14" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/stringable-interface" />
         </CLASSES>
         <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/dhii/exception-interface" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/factory-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/psr-14" />
+          <root url="file://$MODULE_DIR$/vendor/dhii/stringable-interface" />
         </SOURCES>
       </library>
     </orderEntry>

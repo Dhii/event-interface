@@ -13,7 +13,8 @@
     "prefer-stable": true,
     "require": {
         "php": "^5.3 | ^7.0",
-        "dhii/psr-14": "^0.1"
+        "dhii/psr-14": "^0.1",
+        "dhii/factory-interface": "^0.1-alpha2"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8",
