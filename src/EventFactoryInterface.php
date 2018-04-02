@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\EventManager;
+namespace Dhii\Event;
 
 use Dhii\Factory\FactoryInterface;
 use Psr\EventManager\EventInterface as BaseEventInterface;

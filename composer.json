@@ -1,5 +1,5 @@
 {
-    "name": "dhii/event-manager-interface",
+    "name": "dhii/event-interface",
     "description": "An event manager standard based on PSR-14.",
     "type": "library",
     "license": "MIT",
@@ -24,13 +24,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Dhii\\EventManager\\": "src"
+            "Dhii\\Event\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dhii\\EventManager\\UnitTest\\": "test/unit",
-            "Dhii\\EventManager\\FuncTest\\": "test/functional"
+            "Dhii\\Event\\UnitTest\\": "test/unit",
+            "Dhii\\Event\\FuncTest\\": "test/functional"
         }
     },
     "scripts": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "26526817c1e59fc6eb55f629ac7e6cf5",
+    "content-hash": "6d78c763b64cd255c204ed50b276fb4d",
     "packages": [
         {
             "name": "dhii/exception-interface",

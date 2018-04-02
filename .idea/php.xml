@@ -46,7 +46,7 @@
   <component name="PhpProjectSharedConfiguration" php_language_level="5.3.0" />
   <component name="PhpUnit">
     <phpunit_settings>
-      <PhpUnitSettings load_method="CUSTOM_LOADER" configuration_file_path="D:/projects/dhii/event-manager-interface/phpunit.xml" custom_loader_path="D:/projects/dhii/event-manager-interface/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
+      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="F:/projects/dhii/event-interface/vendor/autoload.php" phpunit_phar_path="" />
     </phpunit_settings>
   </component>
 </project>
