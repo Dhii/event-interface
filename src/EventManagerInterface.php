@@ -32,9 +32,9 @@ interface EventManagerInterface
      *
      * @since [*next-version*]
      *
-     * @param string $event The name of the event to attach to.
+     * @param string   $event    The name of the event to attach to.
      * @param callable $callback The listener to attach.
-     * @param int $priority The priority at which the listener is executed.
+     * @param int      $priority The priority at which the listener is executed.
      *
      * @throws RuntimeException If the listener could not be attached.
      */
@@ -45,7 +45,7 @@ interface EventManagerInterface
      *
      * @since [*next-version*]
      *
-     * @param string $event The name of the event to attach to.
+     * @param string   $event    The name of the event to attach to.
      * @param callable $callback The listener to detach.
      *
      * @throws RuntimeException If callback could not be detached.
@@ -64,5 +64,4 @@ interface EventManagerInterface
      * @throws RuntimeException If listeners could not be cleared.
      */
     public function clearListeners($eventName);
-
 }
