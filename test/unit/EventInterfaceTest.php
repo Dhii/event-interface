@@ -1,8 +1,8 @@
 <?php
 
-namespace Psr\EventManager\FuncTest;
+namespace Dhii\Event\UnitTest;
 
-use Psr\EventManager\EventInterface as TestSubject;
+use Dhii\Event\EventInterface as TestSubject;
 use Xpmock\TestCase;
 use Exception as RootException;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
@@ -20,7 +20,7 @@ class EventInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Psr\EventManager\EventInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Event\EventInterface';
 
     /**
      * Creates a new instance of the test subject.

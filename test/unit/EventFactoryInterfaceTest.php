@@ -1,8 +1,8 @@
 <?php
 
-namespace Psr\EventManager\FuncTest;
+namespace Dhii\Event\UnitTest;
 
-use Psr\EventManager\EventManagerInterface as TestSubject;
+use Dhii\Event\EventFactoryInterface as TestSubject;
 use Xpmock\TestCase;
 use Exception as RootException;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
@@ -13,14 +13,14 @@ use PHPUnit_Framework_MockObject_MockBuilder as MockBuilder;
  *
  * @since [*next-version*]
  */
-class EventManagerInterfaceTest extends TestCase
+class EventFactoryInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Psr\EventManager\EventManagerInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Event\EventFactoryInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -34,15 +34,15 @@ class EventManagerInterfaceTest extends TestCase
     public function createInstance($methods = array())
     {
         is_array($methods) && $methods = $this->mergeValues($methods, array(
-            'attach',
-            'detach',
-            'clearListeners',
-            'trigger',
+
         ));
 
         $mock = $this->getMockBuilder(static::TEST_SUBJECT_CLASSNAME)
             ->setMethods($methods)
             ->getMock();
+
+        $mock->method('__')
+                ->will($this->returnArgument(0));
 
         return $mock;
     }
@@ -87,6 +87,36 @@ class EventManagerInterfaceTest extends TestCase
             $className,
             implode(', ', $interfaceNames),
         ));
+        eval($definition);
+
+        return $this->getMockBuilder($paddingClassName);
+    }
+
+    /**
+     * Creates a mock that uses traits.
+     *
+     * This is particularly useful for testing integration between multiple traits.
+     *
+     * @since [*next-version*]
+     *
+     * @param string[] $traitNames Names of the traits for the mock to use.
+     *
+     * @return MockBuilder The builder for a mock of an object that uses the traits.
+     */
+    public function mockTraits($traitNames = array())
+    {
+        $paddingClassName = uniqid('Traits');
+        $definition = vsprintf('abstract class %1$s {%2$s}', array(
+            $paddingClassName,
+            implode(
+                ' ',
+                array_map(
+                    function ($v) {
+                        return vsprintf('use %1$s;', array($v));
+                    },
+                    $traitNames)),
+        ));
+        var_dump($definition);
         eval($definition);
 
         return $this->getMockBuilder($paddingClassName);
