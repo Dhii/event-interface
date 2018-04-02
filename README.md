@@ -1,10 +1,10 @@
 # Dhii - Event Manager Interface
 
-[![Build Status](https://travis-ci.org/Dhii/event-manager-interface.svg?branch=develop)](https://travis-ci.org/Dhii/event-manager-interface)
-[![Code Climate](https://codeclimate.com/github/Dhii/event-manager-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/event-manager-interface)
-[![Test Coverage](https://codeclimate.com/github/Dhii/event-manager-interface/badges/coverage.svg)](https://codeclimate.com/github/Dhii/event-manager-interface/coverage)
-[![Latest Stable Version](https://poser.pugx.org/dhii/event-manager-interface/version)](https://packagist.org/packages/dhii/event-manager-interface)
-[![Latest Unstable Version](https://poser.pugx.org/dhii/event-manager-interface/v/unstable)](https://packagist.org/packages/dhii/event-manager-interface)
+[![Build Status](https://travis-ci.org/Dhii/event-interface.svg?branch=develop)](https://travis-ci.org/Dhii/event-interface)
+[![Code Climate](https://codeclimate.com/github/Dhii/event-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/event-interface)
+[![Test Coverage](https://codeclimate.com/github/Dhii/event-interface/badges/coverage.svg)](https://codeclimate.com/github/Dhii/event-interface/coverage)
+[![Latest Stable Version](https://poser.pugx.org/dhii/event-interface/version)](https://packagist.org/packages/dhii/event-interface)
+[![Latest Unstable Version](https://poser.pugx.org/dhii/event-interface/v/unstable)](https://packagist.org/packages/dhii/event-interface)
 [![This package complies with Dhii standards](https://img.shields.io/badge/Dhii-Compliant-green.svg?style=flat-square)][Dhii]
 
 ## Details
