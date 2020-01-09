@@ -6,7 +6,13 @@
     "authors": [
         {
             "name": "Dhii Team",
-            "email": "development@dhii.co"
+            "email": "development@dhii.co",
+            "role": "Organisation"
+        },
+        {
+            "name": "Anton Ukhanev",
+            "email": "xedin.unknown@gmail.com",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
