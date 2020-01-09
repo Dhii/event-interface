@@ -3,10 +3,10 @@
 namespace Dhii\Event\UnitTest;
 
 use Dhii\Event\EventManagerInterface as TestSubject;
-use Xpmock\TestCase;
+use PHPUnit\Framework\TestCase;
 use Exception as RootException;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
-use PHPUnit_Framework_MockObject_MockBuilder as MockBuilder;
+use PHPUnit\Framework\MockObject\MockBuilder;
 
 /**
  * Tests {@see TestSubject}.

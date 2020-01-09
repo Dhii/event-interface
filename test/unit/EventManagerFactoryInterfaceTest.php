@@ -3,10 +3,10 @@
 namespace Dhii\Event\UnitTest;
 
 use Dhii\Event\EventManagerFactoryInterface as TestSubject;
-use Xpmock\TestCase;
+use PHPUnit\Framework\TestCase;
 use Exception as RootException;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
-use PHPUnit_Framework_MockObject_MockBuilder as MockBuilder;
+use PHPUnit\Framework\MockObject\MockBuilder;
 
 /**
  * Tests {@see TestSubject}.
@@ -40,9 +40,6 @@ class EventManagerFactoryInterfaceTest extends TestCase
         $mock = $this->getMockBuilder(static::TEST_SUBJECT_CLASSNAME)
             ->setMethods($methods)
             ->getMock();
-
-        $mock->method('__')
-                ->will($this->returnArgument(0));
 
         return $mock;
     }
