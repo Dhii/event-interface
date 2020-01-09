@@ -116,7 +116,6 @@ class EventFactoryInterfaceTest extends TestCase
                     },
                     $traitNames)),
         ));
-        var_dump($definition);
         eval($definition);
 
         return $this->getMockBuilder($paddingClassName);
