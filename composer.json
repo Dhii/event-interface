@@ -1,6 +1,6 @@
 {
     "name": "dhii/event-interface",
-    "description": "An event manager standard based on PSR-14.",
+    "description": "An event standard to complement PSR-14",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -18,9 +18,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.0",
-        "dhii/psr-14": "^0.1",
-        "dhii/factory-interface": "^0.1-alpha2"
+        "php": "^7.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.0",

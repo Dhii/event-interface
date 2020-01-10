@@ -2,7 +2,7 @@
 
 namespace Dhii\Event\UnitTest;
 
-use Dhii\Event\EventInterface as TestSubject;
+use Dhii\Events\Event\EventInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use Exception as RootException;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
@@ -15,13 +15,6 @@ use PHPUnit\Framework\MockObject\MockBuilder;
  */
 class EventInterfaceTest extends TestCase
 {
-    /**
-     * The class name of the test subject.
-     *
-     * @since [*next-version*]
-     */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Event\EventInterface';
-
     /**
      * Creates a new instance of the test subject.
      *
@@ -46,7 +39,7 @@ class EventInterfaceTest extends TestCase
             'isPropagationStopped',
         ));
 
-        $mock = $this->getMockBuilder(static::TEST_SUBJECT_CLASSNAME)
+        $mock = $this->getMockBuilder(TestSubject::class)
             ->setMethods($methods)
             ->getMock();
 
@@ -126,7 +119,7 @@ class EventInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            self::TEST_SUBJECT_CLASSNAME,
+            TestSubject::class,
             $subject,
             'A valid instance of the test subject could not be created.'
         );
