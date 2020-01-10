@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
 
+## [0.2] - 2020-01-09
+Stable release.
+
 ## [0.2-alpha1] - 2018-04-02
 ### Changed
 - Project now a Dhii project.
