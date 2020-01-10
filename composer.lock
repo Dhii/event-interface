@@ -4,8 +4,63 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d52a445b8dae189f2dc8602b0f842a94",
-    "packages": [],
+    "content-hash": "755ae3af6b617155853925f66907df4f",
+    "packages": [
+        {
+            "name": "dhii/event-dispatcher-interface",
+            "version": "dev-task/adapt-for-php-7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/event-dispatcher-interface.git",
+                "reference": "e7772a6955058ced9321476621d89392223e16cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/event-dispatcher-interface/zipball/e7772a6955058ced9321476621d89392223e16cb",
+                "reference": "e7772a6955058ced9321476621d89392223e16cb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Events\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                },
+                {
+                    "name": "Anton Ukhanev",
+                    "email": "xedin.unknown@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Standard interfaces for event handling.",
+            "keywords": [
+                "events",
+                "psr",
+                "psr-14"
+            ],
+            "time": "2020-01-10T17:45:46+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "codeclimate/php-test-reporter",
@@ -2255,7 +2310,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "dhii/event-dispatcher-interface": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

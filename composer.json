@@ -18,7 +18,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.0"
+        "php": "^7.0",
+        "dhii/event-dispatcher-interface": "dev-task/adapt-for-php-7.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.0",

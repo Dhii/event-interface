@@ -49,6 +49,7 @@
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/dhii/event-dispatcher-interface" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
@@ -157,6 +158,7 @@
   <component name="PhpUnit">
     <phpunit_settings>
       <phpunit_by_interpreter interpreter_id="18b4ecbf-46ba-4dc6-a50f-015d1b8589fe" custom_loader_path="/srv/vendor/autoload.php" phpunit_phar_path="" />
+      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/phpunit.xml" custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" use_configuration_file="true" />
     </phpunit_settings>
   </component>
 </project>
