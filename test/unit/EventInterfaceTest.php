@@ -4,9 +4,7 @@ namespace Dhii\Events\UnitTest\Event;
 
 use Dhii\Events\Event\EventInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
-use Exception as RootException;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
-use PHPUnit\Framework\MockObject\MockBuilder;
 
 /**
  * Tests {@see TestSubject}.
@@ -20,90 +18,11 @@ class EventInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      *
-     * @param array $methods The methods to mock.
-     *
      * @return MockObject|TestSubject The new instance.
      */
-    public function createInstance($methods = array())
+    public function createInstance()
     {
-        is_array($methods) && $methods = $this->mergeValues($methods, array(
-            'getName',
-            'getTarget',
-            'getParams',
-            'getParam',
-            'setName',
-            'setTarget',
-            'setParams',
-            'setParam',
-            'stopPropagation',
-            'isPropagationStopped',
-        ));
-
         $mock = $this->getMockBuilder(TestSubject::class)
-            ->setMethods($methods)
-            ->getMock();
-
-        return $mock;
-    }
-
-    /**
-     * Merges the values of two arrays.
-     *
-     * The resulting product will be a numeric array where the values of both inputs are present, without duplicates.
-     *
-     * @since [*next-version*]
-     *
-     * @param array $destination The base array.
-     * @param array $source      The array with more keys.
-     *
-     * @return array The array which contains unique values
-     */
-    public function mergeValues($destination, $source)
-    {
-        return array_keys(array_merge(array_flip($destination), array_flip($source)));
-    }
-
-    /**
-     * Creates a mock that both extends a class and implements interfaces.
-     *
-     * This is particularly useful for cases where the mock is based on an
-     * internal class, such as in the case with exceptions. Helps to avoid
-     * writing hard-coded stubs.
-     *
-     * @since [*next-version*]
-     *
-     * @param string   $className      Name of the class for the mock to extend.
-     * @param string[] $interfaceNames Names of the interfaces for the mock to implement.
-     *
-     * @return MockBuilder The builder for a mock of an object that extends and implements
-     *                     the specified class and interfaces.
-     */
-    public function mockClassAndInterfaces($className, $interfaceNames = array())
-    {
-        $paddingClassName = uniqid($className);
-        $definition = vsprintf('abstract class %1$s extends %2$s implements %3$s {}', array(
-            $paddingClassName,
-            $className,
-            implode(', ', $interfaceNames),
-        ));
-        eval($definition);
-
-        return $this->getMockBuilder($paddingClassName);
-    }
-
-    /**
-     * Creates a new exception.
-     *
-     * @since [*next-version*]
-     *
-     * @param string $message The exception message.
-     *
-     * @return RootException|MockObject The new exception.
-     */
-    public function createException($message = '')
-    {
-        $mock = $this->getMockBuilder('Exception')
-            ->setConstructorArgs(array($message))
             ->getMock();
 
         return $mock;
