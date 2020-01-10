@@ -4,6 +4,7 @@
 /test/log/
 /build/
 /.idea/dictionaries/
+/.idea/inspectionProfiles
 /.idea/workspace.xml
 /.idea/tasks.xml
 /.idea/deployment.xml
