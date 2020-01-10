@@ -31,8 +31,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Dhii\\Event\\UnitTest\\": "test/unit",
-            "Dhii\\Event\\FuncTest\\": "test/functional"
+            "Dhii\\Events\\UnitTest\\Event\\": "test/unit",
+            "Dhii\\Events\\FuncTest\\Event\\": "test/functional"
         }
     },
     "scripts": {

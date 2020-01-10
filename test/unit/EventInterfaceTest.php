@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Event\UnitTest;
+namespace Dhii\Events\UnitTest\Event;
 
 use Dhii\Events\Event\EventInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
