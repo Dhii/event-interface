@@ -34,8 +34,8 @@ interface EventInterface
      * @param string  $name    The name of the parameter to get.
      * @param mixed   $default The value to return if the parameter does not exist.
      *
-     * @return mixed The value of the parameter.
      * @since [*next-version*]
+     * @return mixed The value of the parameter.
      *
      */
     public function getParam(string $name, $default = null);

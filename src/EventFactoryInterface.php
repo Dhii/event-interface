@@ -10,7 +10,7 @@ namespace Dhii\Events\Event;
 interface EventFactoryInterface
 {
     /**
-     * Creates a new event
+     * Creates a new event.
      *
      * @since [*next-version*]
      *
