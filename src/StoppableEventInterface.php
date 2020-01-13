@@ -12,5 +12,5 @@ interface StoppableEventInterface extends EventInterface, IsPropagationStoppedCa
      *
      * @return StoppableEventInterface A new event with propagation stopped.
      */
-    public function withPropagationStopped();
+    public function withPropagationStopped(): StoppableEventInterface;
 }
