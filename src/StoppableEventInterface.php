@@ -10,7 +10,7 @@ interface StoppableEventInterface extends EventInterface, IsPropagationStoppedCa
     /**
      * Signals to dispatchers that no more listeners to this event should be processed.
      *
-     * @return StoppableEventInterface A new event with propagation stopped.
+     * @return void
      */
-    public function withPropagationStopped(): StoppableEventInterface;
+    public function stopPropagation();
 }

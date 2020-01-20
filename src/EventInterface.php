@@ -41,14 +41,14 @@ interface EventInterface
     public function getParam(string $name, $default = null);
 
     /**
-     * Create a new instance with the specified parameters.
+     * Sets parameters for this instance.
      *
      * @since [*next-version*]
      *
      * @param array $params The map of parameter names to values.
      *                      Only the parameters that exist here will be changed. The rest will remain unchanged.
      *
-     * @return static A new instance with the specified parameters overriding parameters of this instance.
+     * @return void
      */
-    public function withParams(array $params);
+    public function setParams(array $params);
 }
