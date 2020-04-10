@@ -11,7 +11,7 @@ class StoppableEventInterfaceTest extends TestCase
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.3.0-alpha1
      *
      * @return MockObject|TestSubject The new instance.
      */
@@ -26,7 +26,7 @@ class StoppableEventInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.3.0-alpha1
      */
     public function testCanBeCreated()
     {

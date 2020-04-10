@@ -5,14 +5,14 @@ namespace Dhii\Events\Event;
 /**
  * Represents an application event.
  *
- * @since [*next-version*]
+ * @since 0.3.0-alpha1
  */
 interface EventInterface
 {
     /**
      * Get event name.
      *
-     * @since [*next-version*]
+     * @since 0.3.0-alpha1
      *
      * @return string The name of the event.
      *                The event name contains mixed-case alphanumeric characters, as well as '_' (underscore) and '.' (period).
@@ -22,7 +22,7 @@ interface EventInterface
     /**
      * Get parameters passed to the event.
      *
-     * @since [*next-version*]
+     * @since 0.3.0-alpha1
      *
      * @return array<string, mixed> The map of event parameter names to values.
      */
@@ -34,7 +34,7 @@ interface EventInterface
      * @param string  $name    The name of the parameter to get.
      * @param mixed   $default The value to return if the parameter does not exist.
      *
-     * @since [*next-version*]
+     * @since 0.3.0-alpha1
      * @return mixed The value of the parameter.
      *
      */
@@ -43,7 +43,7 @@ interface EventInterface
     /**
      * Sets parameters for this instance.
      *
-     * @since [*next-version*]
+     * @since 0.3.0-alpha1
      *
      * @param array $params The map of parameter names to values.
      *                      Only the parameters that exist here will be changed. The rest will remain unchanged.

@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
+
+## [0.3.0-alpha1] - 2020-04-09
 This release is very BC-breaking. It takes advantage of the fact that the new accepted
 [PSR-14][] standard already declares an event dispatcher and an interface for events which
 can have their propagation stopped. The aim of this release is to remove all extras,
