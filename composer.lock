@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbfc1f33ab03cb2adbead988a5c2e7d3",
+    "content-hash": "a9cbe31c3b0a9877d50249a7b892079f",
     "packages": [
         {
             "name": "dhii/event-dispatcher-interface",
