@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9534e9cfaeac4834caba48e2b2ddac4",
+    "content-hash": "dbfc1f33ab03cb2adbead988a5c2e7d3",
     "packages": [
         {
             "name": "dhii/event-dispatcher-interface",
-            "version": "dev-develop",
+            "version": "v0.1.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/event-dispatcher-interface.git",
