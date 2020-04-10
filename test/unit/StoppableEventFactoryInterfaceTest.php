@@ -2,7 +2,7 @@
 
 namespace Dhii\Events\UnitTest\Event;
 
-use Dhii\Events\Event\EventFactoryInterface as TestSubject;
+use Dhii\Events\Event\StoppableEventInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
 
@@ -11,7 +11,7 @@ use PHPUnit_Framework_MockObject_MockObject as MockObject;
  *
  * @since [*next-version*]
  */
-class EventFactoryInterfaceTest extends TestCase
+class StoppableEventFactoryInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
