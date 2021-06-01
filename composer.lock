@@ -4,37 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8485ba9b247685b2f15d6a9d14b0e3e8",
+    "content-hash": "5e58e6549eb3fd1fadc37f62355aeb38",
     "packages": [
         {
-            "name": "dhii/event-dispatcher-interface",
-            "version": "v0.1.0-alpha1",
+            "name": "psr/event-dispatcher",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Dhii/event-dispatcher-interface.git",
-                "reference": "fbcd6f1ae1c6646670c8c9a2055002ce96ea137f"
+                "url": "https://github.com/php-fig/event-dispatcher.git",
+                "reference": "dbefd12671e8a14ec7f180cab83036ed26714bb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/event-dispatcher-interface/zipball/fbcd6f1ae1c6646670c8c9a2055002ce96ea137f",
-                "reference": "fbcd6f1ae1c6646670c8c9a2055002ce96ea137f",
+                "url": "https://api.github.com/repos/php-fig/event-dispatcher/zipball/dbefd12671e8a14ec7f180cab83036ed26714bb0",
+                "reference": "dbefd12671e8a14ec7f180cab83036ed26714bb0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0"
+                "php": ">=7.2.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.1.x-dev"
+                    "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Dhii\\Events\\": "src/"
+                    "Psr\\EventDispatcher\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -45,11 +42,6 @@
                 {
                     "name": "PHP-FIG",
                     "homepage": "http://www.php-fig.org/"
-                },
-                {
-                    "name": "Anton Ukhanev",
-                    "email": "xedin.unknown@gmail.com",
-                    "role": "Developer"
                 }
             ],
             "description": "Standard interfaces for event handling.",
@@ -59,9 +51,10 @@
                 "psr-14"
             ],
             "support": {
-                "source": "https://github.com/Dhii/event-dispatcher-interface/tree/v0.1.0-alpha1"
+                "issues": "https://github.com/php-fig/event-dispatcher/issues",
+                "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
             },
-            "time": "2020-04-10T16:32:51+00:00"
+            "time": "2019-01-08T18:20:26+00:00"
         }
     ],
     "packages-dev": [
@@ -3754,7 +3747,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "php": "^7.2 | ^8.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"

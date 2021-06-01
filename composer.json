@@ -18,8 +18,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.2",
-        "dhii/event-dispatcher-interface": "^0.1"
+        "php": "^7.2 | ^8.0",
+        "psr/event-dispatcher": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0 | ^9.0",
