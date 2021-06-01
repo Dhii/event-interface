@@ -35,8 +35,8 @@ echo $event->getParam('hello'); // 'world'
 ```
 
 ### With PSR-14
-Evemts cam be dispatched using a standards-compliant event dispatcher.
-This example requires the already included [`dhii/event-dispatcher-interface`][] package.
+Events cam be dispatched using a standards-compliant event dispatcher.
+This example requires the [`dhii/event-dispatcher-interface`][] package.
 ```php
 <?php
 use Psr\EventDispatcher\EventDispatcherInterface;
