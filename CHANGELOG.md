@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
+
+## [0.4.0-alpha1] - 2021-06-01
 ### Removed
 - Support for PHP < 7.2 (#6).
 - No longer relying on `dhii/event dispatcher`, but using `psr/event-dispatcher` instead  (#6).
