@@ -14,7 +14,6 @@ interface StoppableEventInterface extends EventInterface, PsrStoppableEventInter
     /**
      * Signals to dispatchers that no more listeners to this event should be processed.
      *
-     * @return void
      */
-    public function stopPropagation();
+    public function stopPropagation(): void;
 }
