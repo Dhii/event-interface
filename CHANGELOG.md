@@ -4,7 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [[*next-version*]] - YYYY-MM-DD
+## [0.3.0] - 2021-06-01
+Stable release.
 
 ## [0.3.0-alpha1] - 2020-04-09
 This release is very BC-breaking. It takes advantage of the fact that the new accepted
