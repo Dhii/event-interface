@@ -10,4 +10,4 @@
 /.idea/deployment.xml
 /.idea/vagrant.xml
 /.idea/misc.xml
-.env
+/.env
