@@ -1,7 +1,7 @@
 /vendor/
 /nbproject/private/
-/test/coverage/
-/test/log/
+/tests/coverage/
+/tests/log/
 /build/
 /.idea/dictionaries/
 /.idea/inspectionProfiles
@@ -11,3 +11,5 @@
 /.idea/vagrant.xml
 /.idea/misc.xml
 /.env
+/.idea/dataSources.local.xml
+.phpunit.result.cache

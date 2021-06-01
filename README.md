@@ -1,8 +1,6 @@
 # Dhii - Event Interface
 
-[![Build Status](https://travis-ci.org/Dhii/event-interface.svg?branch=develop)](https://travis-ci.org/Dhii/event-interface)
-[![Code Climate](https://codeclimate.com/github/Dhii/event-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/event-interface)
-[![Test Coverage](https://codeclimate.com/github/Dhii/event-interface/badges/coverage.svg)](https://codeclimate.com/github/Dhii/event-interface/coverage)
+[![Continuous Integration](https://github.com/Dhii/event-interface/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/Dhii/event-interface/actions/workflows/continuous-integration.yml)
 [![Latest Stable Version](https://poser.pugx.org/dhii/event-interface/version)](https://packagist.org/packages/dhii/event-interface)
 [![Latest Unstable Version](https://poser.pugx.org/dhii/event-interface/v/unstable)](https://packagist.org/packages/dhii/event-interface)
 
@@ -35,8 +33,8 @@ echo $event->getParam('hello'); // 'world'
 ```
 
 ### With PSR-14
-Evemts cam be dispatched using a standards-compliant event dispatcher.
-This example requires the already included [`dhii/event-dispatcher-interface`][] package.
+Events cam be dispatched using a standards-compliant event dispatcher.
+This example requires the suggested [`dhii/event-dispatcher-interface`][] package.
 ```php
 <?php
 use Psr\EventDispatcher\EventDispatcherInterface;

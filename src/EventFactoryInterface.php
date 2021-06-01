@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\Events\Event;
 
 /**
@@ -15,7 +17,7 @@ interface EventFactoryInterface
      * @since 0.3.0-alpha1
      *
      * @param string $name   The name of the event.
-     * @param array  $params A map of parameter names to values.
+     * @param array<int|string, mixed>  $params A map of parameter names to values.
      *
      * @return EventInterface The new event.
      */

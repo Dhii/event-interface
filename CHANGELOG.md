@@ -2,9 +2,19 @@
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
-and this project adheres to [Semantic Versioning](http://semver.org/).Stable release.
+and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
+### Removed
+- Support for PHP < 7.2 (#6).
+- No longer relying on `dhii/event dispatcher`, but using `psr/event-dispatcher` instead  (#6).
+
+### Added
+- Missing typehints that have now become possible (#6).
+- Doc improvements (#6).
+
+### Changed
+- Upgraded tooling and configs (#6).
 
 ## [0.3.0] - 2021-06-01
 Stable release.

@@ -5,6 +5,7 @@ namespace Dhii\Events\UnitTest\Event;
 use Dhii\Events\Event\StoppableEventInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
+use Psr\EventDispatcher\StoppableEventInterface;
 
 class StoppableEventInterfaceTest extends TestCase
 {
@@ -34,6 +35,11 @@ class StoppableEventInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             TestSubject::class,
+            $subject,
+            'A valid instance of the test subject could not be created.'
+        );
+        $this->assertInstanceOf(
+            StoppableEventInterface::class,
             $subject,
             'A valid instance of the test subject could not be created.'
         );

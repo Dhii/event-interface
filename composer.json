@@ -1,48 +1,47 @@
 {
-    "name": "dhii/event-interface",
-    "description": "An event standard to complement PSR-14",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Dhii Team",
-            "email": "development@dhii.co",
-            "role": "Organisation"
-        },
-        {
-            "name": "Anton Ukhanev",
-            "email": "xedin.unknown@gmail.com",
-            "role": "Developer"
-        }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "php": "^7.0",
-        "dhii/event-dispatcher-interface": "^0.1"
+  "name": "dhii/event-interface",
+  "description": "An event standard to complement PSR-14",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dhii Team",
+      "email": "development@dhii.co",
+      "role": "Organisation"
     },
-    "require-dev": {
-        "phpunit/phpunit": "^6.0 | ^7.0",
-        "codeclimate/php-test-reporter": "<=0.3.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "Dhii\\Events\\Event\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Dhii\\Events\\UnitTest\\Event\\": "test/unit",
-            "Dhii\\Events\\FuncTest\\Event\\": "test/functional"
-        }
-    },
-    "scripts": {
-        "test": "phpunit",
-        "csfix": "php-cs-fixer fix -vvv"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-develop": "0.3.x-dev"
-        }
+    {
+      "name": "Anton Ukhanev",
+      "email": "xedin.unknown@gmail.com",
+      "role": "Developer"
     }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^7.2 | ^8.0",
+    "psr/event-dispatcher": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0 | ^9.0",
+    "vimeo/psalm": "^4.0",
+    "slevomat/coding-standard": "^6.0",
+    "dhii/event-dispatcher-interface": "^0.2"
+  },
+  "suggest": {
+    "dhii/event-dispatcher-interface": "For working with name-based events"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dhii\\Events\\Event\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Dhii\\Events\\UnitTest\\Event\\": "tests/unit"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "csfix": "php-cs-fixer fix -vvv"
+  }
 }

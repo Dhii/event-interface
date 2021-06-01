@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\Events\Event;
 
 /**
@@ -48,7 +50,6 @@ interface EventInterface
      * @param array $params The map of parameter names to values.
      *                      Only the parameters that exist here will be changed. The rest will remain unchanged.
      *
-     * @return void
      */
-    public function setParams(array $params);
+    public function setParams(array $params): void;
 }
