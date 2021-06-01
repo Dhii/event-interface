@@ -10,6 +10,6 @@
 /.idea/deployment.xml
 /.idea/vagrant.xml
 /.idea/misc.xml
+/.env
 /.idea/dataSources.local.xml
 .phpunit.result.cache
-.env

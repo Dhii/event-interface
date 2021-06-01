@@ -16,6 +16,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Upgraded tooling and configs (#6).
 
+## [0.3.0] - 2021-06-01
+Stable release.
+
 ## [0.3.0-alpha1] - 2020-04-09
 This release is very BC-breaking. It takes advantage of the fact that the new accepted
 [PSR-14][] standard already declares an event dispatcher and an interface for events which
