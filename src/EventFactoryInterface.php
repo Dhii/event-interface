@@ -1,23 +1,23 @@
 <?php
 
-namespace Dhii\Event;
-
-use Dhii\Factory\FactoryInterface;
-use Psr\EventManager\EventInterface as BaseEventInterface;
+namespace Dhii\Events\Event;
 
 /**
  * A factory of events.
  *
- * @since [*next-version*]
+ * @since 0.3.0-alpha1
  */
-interface EventFactoryInterface extends FactoryInterface
+interface EventFactoryInterface
 {
     /**
-     * {@inheritdoc}
+     * Creates a new event.
      *
-     * @since [*next-version*]
+     * @since 0.3.0-alpha1
      *
-     * @return BaseEventInterface The new event.
+     * @param string $name   The name of the event.
+     * @param array  $params A map of parameter names to values.
+     *
+     * @return EventInterface The new event.
      */
-    public function make($config = null);
+    public function make(string $name, array $params): EventInterface;
 }
