@@ -6,12 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
 ### Removed
-- Suppport for PHP < 7.2 (#6).
+- Support for PHP < 7.2 (#6).
 - No longer relying on `dhii/event dispatcher`, but using `psr/event-dispatcher` instead  (#6).
 
 ### Added
-- Missing typehints that have now become possible.
-- Doc improvements.
+- Missing typehints that have now become possible (#6).
+- Doc improvements (#6).
 
 ### Changed
 - Upgraded tooling and configs (#6).

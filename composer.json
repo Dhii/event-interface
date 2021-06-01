@@ -24,7 +24,11 @@
   "require-dev": {
     "phpunit/phpunit": "^8.0 | ^9.0",
     "vimeo/psalm": "^4.0",
-    "slevomat/coding-standard": "^6.0"
+    "slevomat/coding-standard": "^6.0",
+    "dhii/event-dispatcher-interface": "^0.2"
+  },
+  "suggest": {
+    "dhii/event-dispatcher-interface": "For working with name-based events"
   },
   "autoload": {
     "psr-4": {

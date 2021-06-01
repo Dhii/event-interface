@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07690233df251205e3beb87bee8083ec",
+    "content-hash": "6538e042acee9d6bed1419c4b844187a",
     "packages": [
         {
             "name": "psr/event-dispatcher",
@@ -511,6 +511,61 @@
                 "source": "https://github.com/dealerdirect/phpcodesniffer-composer-installer"
             },
             "time": "2020-12-07T18:04:37+00:00"
+        },
+        {
+            "name": "dhii/event-dispatcher-interface",
+            "version": "v0.2.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/event-dispatcher-interface.git",
+                "reference": "0158c111a484081ebbcc740048f86a73ff66690c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/event-dispatcher-interface/zipball/0158c111a484081ebbcc740048f86a73ff66690c",
+                "reference": "0158c111a484081ebbcc740048f86a73ff66690c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 | ^8.0",
+                "psr/event-dispatcher": "^1.0@dev"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0 | ^9.0",
+                "slevomat/coding-standard": "^6.0",
+                "vimeo/psalm": "^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Events\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                },
+                {
+                    "name": "Anton Ukhanev",
+                    "email": "xedin.unknown@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Standard interfaces for event handling.",
+            "keywords": [
+                "events",
+                "psr",
+                "psr-14"
+            ],
+            "support": {
+                "source": "https://github.com/Dhii/event-dispatcher-interface/tree/v0.2.0-alpha1"
+            },
+            "time": "2021-06-01T16:47:31+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
