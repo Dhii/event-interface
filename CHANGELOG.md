@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - No longer relying on `dhii/event dispatcher`, but using `psr/event-dispatcher` instead  (#6).
 
 ### Added
-- Support for PHP 8.0.
+- Support for PHP 8.0 (#6).
 - Missing typehints that have now become possible (#6).
 - Doc improvements (#6).
 
